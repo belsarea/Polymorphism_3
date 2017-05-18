@@ -11,7 +11,7 @@ app.listen(3000, function () {
 app.use(express.static('public')); 
 var Meow = mongoose.model('Meow', {
  text: String
-  });
+  });//comment1
 app.get('/meows',function(req,res,next){
 Meow.find({},function(err,meows){
 return res.json(meows);
