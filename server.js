@@ -17,3 +17,11 @@ Meow.find({},function(err,meows){
 return res.json(meows);
 });
 });
+app.post('/meows', function(req, res, next){	
+		var newMeow = new Meow({
+			text: req.body.newMeow		
+		});
+		newMeow.save(function(err){
+			return res.send("Added Successfully");
+	});	
+	});
