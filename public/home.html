@@ -12,8 +12,8 @@
 </div>
 <div class="col-md-8">
 <div class="new-meow">
-<input type="text" class="form-control" placeholder="new meow">
-<button type="button" class="btn">Submit</button>
+<input type="text" class="form-control" placeholder="new meow" ng-model="newmeow">
+<button type="button" ng-click="Submitnew()" class="btn">Submit</button>
 </div>
 <h3 ng-repeat="meow in meows">
 <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
